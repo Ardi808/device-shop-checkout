@@ -64,3 +64,11 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+aside {
+  background-color: var(--color-background-sidebar);
+  border-radius: 10px 0 0 10px;
+}
+.card-form {
+  background-color: var(--color-background-card);
+  border-radius: 0 10px 10px 0;
+}
