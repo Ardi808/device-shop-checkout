@@ -58,7 +58,7 @@ header p {
 main {
   border: 1px solid;
   width: 95%;
-  height: 300px;
+  /* height: 300px; */
   margin: auto;
   border-radius: 10px;
   display: grid;
@@ -68,6 +68,55 @@ aside {
   background-color: var(--color-background-sidebar);
   border-radius: 10px 0 0 10px;
 }
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1rem 1fr 1fr 1fr;
+  margin: 1.5rem 1.5rem 1rem 1.5rem;
+}
+.image {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  width: 90px;
+  height: 90px;
+  background-color: var(--color-background-card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+.image img {
+  width: auto;
+  height: auto;
+}
+.tag {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.total {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  align-self: end;
+}
+.price {
+  grid-column: 5/6;
+  grid-row: 1/2;
+  justify-self: end;
+}
+.delete {
+  grid-column: 5/6;
+  grid-row: 3/4;
+  justify-self: end;
+  align-self: end;
+}
+
+
+
+
+
+
+
+
 .card-form {
   background-color: var(--color-background-card);
   border-radius: 0 10px 10px 0;
