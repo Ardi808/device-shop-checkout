@@ -41,3 +41,17 @@ main {
   background-size: contain;
   padding: 2rem;
 }
+header {
+  color: var(--color-text-inverse);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+header p {
+  font-size: .8rem;
+  background-color: var(--color-button-primary);
+  padding: .3rem 1rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
