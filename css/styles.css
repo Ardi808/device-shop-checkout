@@ -56,9 +56,7 @@ header p {
   text-transform: uppercase;
 }
 main {
-  border: 1px solid;
   width: 95%;
-  /* height: 300px; */
   margin: auto;
   border-radius: 10px;
   display: grid;
@@ -70,7 +68,7 @@ aside {
 }
 .card {
   display: grid;
-  grid-template-columns: 1fr 1rem 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1rem 1fr auto 1fr;
   margin: 1.5rem 1.5rem 1rem 1.5rem;
 }
 .image {
