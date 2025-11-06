@@ -3,7 +3,6 @@
   --color-background-main: #f5f6f8;        /* abu-abu muda latar belakang utama */
   --color-background-card: #ffffff;        /* putih untuk kartu/form */
   --color-background-sidebar: #f0f1f3;     /* abu-abu terang sisi kiri */
-  --color-background-header: #1e1e2f;      /* gradasi gelap di header */
   
   /* 🖋️ Warna Teks */
   --color-text-primary: #1a1a1a;           /* teks utama hitam */
@@ -33,13 +32,13 @@
   font-size: 1rem;
 }
 
-main {
+.container {
   min-height: 100vh;
   background-color: var(--color-background-main);
   background-image: url(../resources/background-image.png);
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 2rem;
+  padding-top: 1.5rem;
 }
 header {
   color: var(--color-text-inverse);
@@ -47,6 +46,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 header p {
   font-size: .8rem;
@@ -54,4 +54,13 @@ header p {
   padding: .3rem 1rem;
   border-radius: 20px;
   text-transform: uppercase;
+}
+main {
+  border: 1px solid;
+  width: 95%;
+  height: 300px;
+  margin: auto;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
