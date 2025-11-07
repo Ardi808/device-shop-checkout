@@ -121,6 +121,20 @@ aside .card:first-child {
   border-top: 1px solid var(--color-border);
   padding-top: 1rem;
 }
+.coupon input {
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+.coupon button {
+  background-color: var(--color-button-primary);
+  border-radius: 8px;
+  border: none;
+  padding: 6px;
+  font-size: .8rem;
+  color: var(--color-text-inverse);
+}
 
 
 
