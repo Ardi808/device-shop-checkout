@@ -92,5 +92,4 @@ The layout and concept were based on the *Device Shop Checkout Page* challenge.
 
 ## Author
 
-- Website [your-website.com](https://your-website.com)
 - GitHub [@Ardi808](https://github.com/Ardi808)
