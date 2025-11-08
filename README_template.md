@@ -1,6 +1,4 @@
-<!-- Please update value in the {}  -->
-
-<h1 align="center">{Your project name} | devChallenges</h1>
+<h1 align="center">Device Shop Checkout | devChallenges</h1>
 
 <div align="center">
    Solution for a challenge <a href="https://devchallenges.io/challenge/apple-shop-checkout-page-challenge" target="_blank">Device Shop Checkout</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
@@ -8,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://your-demo-link.your-domain">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://your-url-to-the-solution">
       Solution
     </a>
     <span> | </span>
@@ -22,7 +20,7 @@
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
+---
 
 ## Table of Contents
 
@@ -31,56 +29,68 @@
   - [Useful resources](#useful-resources)
 - [Built with](#built-with)
 - [Features](#features)
-- [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
+- [Author](#author)
 
-<!-- OVERVIEW -->
+---
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](resources/preview.png)
 
-<!--
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+**Device Shop Checkout** is a clean and responsive checkout page designed to display selected products, total prices, and a user information form in one elegant layout.  
+The layout is built using a combination of **CSS Grid** and **Flexbox**, while the color scheme is managed through **CSS custom properties (variables)** for better theme control.
 
-- What have you learned/improved?
-- Your wisdom? :)
--->
+This project was created as a submission to a [devChallenges.io](https://devchallenges.io/challenge/apple-shop-checkout-page-challenge) challenge.
+
+---
 
 ### What I learned
 
-<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
+- Creating a complex layout using **CSS Grid** to divide the sidebar (cart) and checkout form sections.  
+- Using **CSS variables** to easily manage colors and theme.  
+- Building a semantic HTML structure with elements such as `header`, `main`, `aside`, and `footer`.  
+- Designing clean and accessible input fields and form layout.  
+- Adding hover transitions for subtle interactivity.
+
+---
 
 ### Useful resources
 
-<!--
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
--->
+- [MDN Web Docs - CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) – Excellent reference for understanding grid-based layouts.  
+- [CSS Tricks - Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) – A comprehensive guide to mastering CSS Grid for responsive design.
+
+---
 
 ### Built with
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+- Semantic **HTML5** markup  
+- **CSS custom properties**  
+- **Flexbox**  
+- **CSS Grid**  
+- Responsive design principles  
+- Vanilla CSS (no framework)
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+---
 
 ## Features
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+- 💳 Elegant and responsive checkout design  
+- 🧾 Sidebar with product list, price summary, and coupon form  
+- 🧍‍♂️ User information form with basic validation  
+- 🎨 Modern color scheme using CSS variables  
+- 🧩 Semantic and accessible HTML structure  
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
+---
 
 ## Acknowledgements
 
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
+Thanks to [devChallenges.io](https://devchallenges.io) for creating inspiring front-end challenges.  
+The layout and concept were based on the *Device Shop Checkout Page* challenge.
+
+---
 
 ## Author
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
+- Website [your-website.com](https://your-website.com)
+- GitHub [@Ardi808](https://github.com/Ardi808)
