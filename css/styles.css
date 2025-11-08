@@ -1,52 +1,42 @@
+/* ==============================================
+   🎨 ROOT VARIABLES
+   ============================================== */
 :root {
-  /* 🎨 Warna Latar Belakang */
+  /* Background Colors */
   --color-background-main: #f5f6f8;
-  /* abu-abu muda latar belakang utama */
   --color-background-card: #ffffff;
-  /* putih untuk kartu/form */
   --color-background-sidebar: #f0f1f3;
-  /* abu-abu terang sisi kiri */
 
-  /* 🖋️ Warna Teks */
+  /* Text Colors */
   --color-text-primary: #1a1a1a;
-  /* teks utama hitam */
   --color-text-secondary: #555555;
-  /* teks sekunder abu sedang */
   --color-text-muted: #888888;
-  /* teks ringan / placeholder */
   --color-text-inverse: #ffffff;
-  /* teks di tombol gelap */
 
-  /* 🧾 Warna Border dan Input */
+  /* Borders & Inputs */
   --color-border: #d1d5db;
-  /* border elemen form */
   --color-input-background: #f9fafb;
-  /* latar input */
   --color-input-placeholder: #9ca3af;
-  /* placeholder input */
 
-  /* 🧮 Warna Aksen dan Tombol */
+  /* Buttons & Accents */
   --color-button-primary: #1a1a1a;
-  /* tombol utama (hitam pekat) */
   --color-button-hover: #333333;
-  /* hover tombol */
   --color-button-disabled: #cccccc;
-  /* tombol nonaktif */
 
-  /* 💰 Warna Harga dan Total */
+  /* Prices & Totals */
   --color-price: #1a1a1a;
-  /* teks harga */
   --color-total: #000000;
-  /* total akhir */
   --color-tax: #666666;
-  /* teks pajak */
 }
 
+/* ==============================================
+   🧱 GLOBAL STYLES
+   ============================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 body {
@@ -54,6 +44,9 @@ body {
   background-color: var(--color-background-main);
 }
 
+/* ==============================================
+   🏗️ LAYOUT STRUCTURE
+   ============================================== */
 .container {
   min-height: 100vh;
   background-image: url(../resources/background-image.png);
@@ -62,6 +55,9 @@ body {
   padding-top: 1.5rem;
 }
 
+/* ==============================================
+   🧾 HEADER
+   ============================================== */
 header {
   color: var(--color-text-inverse);
   display: flex;
@@ -72,13 +68,16 @@ header {
 }
 
 header p {
-  font-size: .8rem;
+  font-size: 0.8rem;
   background-color: var(--color-button-primary);
-  padding: .3rem 1rem;
+  padding: 0.3rem 1rem;
   border-radius: 20px;
   text-transform: uppercase;
 }
 
+/* ==============================================
+   🧩 MAIN CONTENT
+   ============================================== */
 main {
   width: 95%;
   margin: auto;
@@ -88,6 +87,9 @@ main {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* ==============================================
+   🛒 ASIDE (CART SECTION)
+   ============================================== */
 aside {
   background-color: var(--color-background-sidebar);
   border-radius: 10px 0 0 10px;
@@ -103,6 +105,7 @@ aside .card:first-child {
   margin-top: 1.5rem;
 }
 
+/* --- Product Image --- */
 .image {
   grid-column: 1/2;
   grid-row: 1/4;
@@ -121,11 +124,17 @@ aside .card:first-child {
   height: auto;
 }
 
+/* --- Product Info --- */
 .tag {
   grid-column: 3/4;
   grid-row: 1/2;
 }
 
+.card .tag .name {
+  margin-bottom: 0.5rem;
+}
+
+/* --- Quantity & Price --- */
 .total {
   grid-column: 3/4;
   grid-row: 3/4;
@@ -138,6 +147,7 @@ aside .card:first-child {
   justify-self: end;
 }
 
+/* --- Delete Button --- */
 .delete {
   grid-column: 5/6;
   grid-row: 3/4;
@@ -145,18 +155,18 @@ aside .card:first-child {
   align-self: end;
 }
 
+/* --- Coupon --- */
 .coupon {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 5px;
-  margin: .8rem 1.5rem;
+  margin: 0.8rem 1.5rem;
   border-top: 1px solid var(--color-border);
   padding-top: 1rem;
 }
 
 .coupon input {
-  padding: 10px;
-  padding-left: 15px;
+  padding: 10px 15px;
   border-radius: 8px;
   background-color: var(--color-background-card);
   border: 1px solid var(--color-border);
@@ -167,10 +177,11 @@ aside .card:first-child {
   border-radius: 8px;
   border: none;
   padding: 6px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--color-text-inverse);
 }
 
+/* --- Totals --- */
 .total-buttom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -182,15 +193,20 @@ aside .card:first-child {
   justify-self: end;
 }
 
+.total-buttom .no {
+  color: var(--color-price);
+}
 
-
-
-
+/* ==============================================
+   📋 FORM SECTION (RIGHT SIDE)
+   ============================================== */
 .card-form {
   background-color: var(--color-background-card);
   border-radius: 0 10px 10px 0;
   padding: 1.5rem;
 }
+
+/* --- Contact Form Layout --- */
 .contact-information {
   margin-top: 1rem;
   display: grid;
@@ -198,98 +214,126 @@ aside .card:first-child {
   grid-template-rows: repeat(7, auto);
   gap: 1rem;
   grid-template-areas:
-  'name- name-'
-  'name name'
-  'email- email-'
-  'email email'
-  'country- postal-'
-  'country postal'
-  'continue continue'
-  ;
+    "name- name-"
+    "name name"
+    "email- email-"
+    "email email"
+    "country- postal-"
+    "country postal"
+    "continue continue";
 }
-.contact-information .name, .email, .country, .postal {
+
+/* --- Input Fields --- */
+.contact-information .name,
+.email,
+.country,
+.postal {
   margin: 0;
   padding: 1rem;
   border-radius: 8px;
   background-color: var(--color-background-main);
   border: 1px solid var(--color-border);
 }
-.contact-information .name, .email, .country, .postal, .continue, .name-, .email-, .country-, .postal-,
+
+/* --- Label, Buttons, and Text --- */
+.contact-information .name,
+.email,
+.country,
+.postal,
+.continue,
+.name-,
+.email-,
+.country-,
+.postal-,
 .total-buttom p,
 .card .tag .color {
   font-size: 90%;
   color: var(--color-text-primary);
 }
-.total-buttom .no {
-  color: var(--color-price);
-  color: black;
-}
-.card .tag .name {
-  margin-bottom: .5rem;
-}
+
+/* --- Form Grid Areas --- */
 .name {
   grid-area: name;
 }
+
 .email {
   grid-area: email;
 }
+
 .country {
   grid-area: country;
 }
+
 .postal {
   grid-area: postal;
 }
+
 .continue {
   grid-area: continue;
   background-color: var(--color-button-primary);
   border-radius: 8px;
   border: none;
   padding: 1rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--color-text-inverse);
 }
+
 .name- {
   grid-area: name-;
 }
+
 .email- {
   grid-area: email-;
 }
+
 .country- {
   grid-area: country-;
 }
+
 .postal- {
   grid-area: postal-;
 }
+
+/* --- Buttons --- */
 button {
-  transition: .3s;
+  transition: 0.3s;
 }
+
 button:hover {
   background-color: var(--color-button-hover);
 }
 
+/* ==============================================
+   👣 FOOTER
+   ============================================== */
 .author-info {
   width: 60%;
   margin: auto;
   display: flex;
-  border-radius: 10px;
   justify-content: center;
-  padding: .4rem;
+  align-items: center;
+  padding: 0.4rem;
   background-color: var(--color-background-card);
+  border-radius: 10px;
   border: 1px solid var(--color-border);
 }
+
 .author-info a {
   color: black;
   margin: 0 5px;
 }
 
-/* Hilangkan panah di browser Chrome, Safari, Edge, dan Opera */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+/* ==============================================
+   ⚙️ FORM INPUT ADJUSTMENTS
+   ============================================== */
+/* Remove spinner (Chrome, Safari, Edge, Opera) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Hilangkan panah di browser Firefox */
-input[type=number] {
+/* Remove spinner (Firefox) */
+input[type="number"] {
   -moz-appearance: textfield;
 }

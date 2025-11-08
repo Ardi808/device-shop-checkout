@@ -4,25 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Favicon -->
     <link
       rel="icon"
       href="resources/favicon.ico"
       type="image/x-icon"
       sizes="96x96"
     />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Device Shop Checkout | devChallenges.io</title>
   </head>
+
   <body>
     <div class="container">
+      <!-- ===============================
+           HEADER SECTION
+      ================================== -->
       <header>
         <h1>Checkout</h1>
         <p>3 items</p>
       </header>
+
+      <!-- ===============================
+           MAIN SECTION
+      ================================== -->
       <main>
+        <!-- ==========================
+             CART / PRODUCT LIST
+        =========================== -->
         <aside>
-          <!-- iphone -->
+          <!-- === iPhone === -->
           <div class="card">
             <figure class="image">
               <img src="resources/Gold.png" alt="iPhone" />
@@ -38,7 +52,7 @@
             </div>
           </div>
 
-          <!-- appel watch -->
+          <!-- === Apple Watch === -->
           <div class="card">
             <figure class="image">
               <img src="resources/Apple-watch.png" alt="Apple-watch" />
@@ -53,10 +67,11 @@
               <img src="resources/close-icon.svg" alt="close" />
             </div>
           </div>
-          <!-- imac -->
+
+          <!-- === iMac === -->
           <div class="card">
             <figure class="image">
-              <img src="resources/iMac.png" alt="imac" />
+              <img src="resources/iMac.png" alt="iMac" />
             </figure>
             <div class="tag">
               <div class="name">iMac</div>
@@ -68,10 +83,14 @@
               <img src="resources/close-icon.svg" alt="close" />
             </div>
           </div>
+
+          <!-- === Coupon Form === -->
           <form action="" class="coupon">
             <input type="text" placeholder="Enter coupon code" />
             <button>Apply Coupon</button>
           </form>
+
+          <!-- === Price Summary === -->
           <div class="total-buttom">
             <p class="huruf">Sub total</p>
             <p class="angka">$2597.00</p>
@@ -81,32 +100,56 @@
             <p class="angka no">$3220.28</p>
           </div>
         </aside>
-        <!-- card kanan -->
+
+        <!-- ==========================
+             CONTACT FORM SECTION
+        =========================== -->
         <div class="card-form">
           <h2>Contact Information</h2>
+
           <form action="" class="contact-information">
             <label for="name" class="name-">First & Last name</label>
-            <input type="text" id="name" placeholder="Enter first & last name" class="name"/>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter first & last name"
+              class="name"
+            />
+
             <label for="email" class="email-">Email Address</label>
-            <input type="email" id="email" placeholder="Enter email address" class="email"/>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter email address"
+              class="email"
+            />
+
             <label for="country" class="country-">Country</label>
             <select name="country" id="country" class="country">
               <option value="" disabled selected hidden>Select Country</option>
               <option value="us">Finland</option>
               <option value="id">Indonesia</option>
-              <option value="sg">Singapura</option>
+              <option value="sg">Singapore</option>
             </select>
+
             <label for="postal" class="postal-">Postal Code</label>
-            <input type="number" id="postal" class="postal"/>
+            <input type="number" id="postal" class="postal" />
+
             <button class="continue">Continue</button>
           </form>
         </div>
       </main>
 
-      <!-- footer -->
+      <!-- ===============================
+           FOOTER SECTION
+      ================================== -->
       <footer class="author-info">
-        Coded by<a href="https://github.com/Ardi808" target="_blank">Ardi808</a> | Challenge by
-        <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        Coded by
+        <a href="https://github.com/Ardi808" target="_blank">Ardi808</a> |
+        Challenge by
+        <a
+          href="https://www.devchallenges.io?ref=challenge"
+          target="_blank"
           >devChallenges.io</a
         >.
       </footer>
