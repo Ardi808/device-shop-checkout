@@ -190,3 +190,16 @@ aside .card:first-child {
   border-radius: 0 10px 10px 0;
   padding: 1.5rem;
 }
+
+
+/* Hilangkan panah di browser Chrome, Safari, Edge, dan Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hilangkan panah di browser Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
