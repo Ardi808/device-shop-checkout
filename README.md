@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://your-demo-link.your-domain">
+    <a href="https://ardi808.github.io/device-shop-checkout">
       Demo
     </a>
     <span> | </span>
