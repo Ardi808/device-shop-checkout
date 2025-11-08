@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](resources/preview.png)
+![screenshot](screenshot/127.0.0.1_5500_index.html_.png)
 
 **Device Shop Checkout** is a clean and responsive checkout page designed to display selected products, total prices, and a user information form in one elegant layout.  
 The layout is built using a combination of **CSS Grid** and **Flexbox**, while the color scheme is managed through **CSS custom properties (variables)** for better theme control.
