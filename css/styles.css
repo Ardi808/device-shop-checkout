@@ -1,47 +1,67 @@
 :root {
   /* 🎨 Warna Latar Belakang */
-  --color-background-main: #f5f6f8;        /* abu-abu muda latar belakang utama */
-  --color-background-card: #ffffff;        /* putih untuk kartu/form */
-  --color-background-sidebar: #f0f1f3;     /* abu-abu terang sisi kiri */
-  
+  --color-background-main: #f5f6f8;
+  /* abu-abu muda latar belakang utama */
+  --color-background-card: #ffffff;
+  /* putih untuk kartu/form */
+  --color-background-sidebar: #f0f1f3;
+  /* abu-abu terang sisi kiri */
+
   /* 🖋️ Warna Teks */
-  --color-text-primary: #1a1a1a;           /* teks utama hitam */
-  --color-text-secondary: #555555;         /* teks sekunder abu sedang */
-  --color-text-muted: #888888;             /* teks ringan / placeholder */
-  --color-text-inverse: #ffffff;           /* teks di tombol gelap */
+  --color-text-primary: #1a1a1a;
+  /* teks utama hitam */
+  --color-text-secondary: #555555;
+  /* teks sekunder abu sedang */
+  --color-text-muted: #888888;
+  /* teks ringan / placeholder */
+  --color-text-inverse: #ffffff;
+  /* teks di tombol gelap */
 
   /* 🧾 Warna Border dan Input */
-  --color-border: #d1d5db;                 /* border elemen form */
-  --color-input-background: #f9fafb;       /* latar input */
-  --color-input-placeholder: #9ca3af;      /* placeholder input */
+  --color-border: #d1d5db;
+  /* border elemen form */
+  --color-input-background: #f9fafb;
+  /* latar input */
+  --color-input-placeholder: #9ca3af;
+  /* placeholder input */
 
   /* 🧮 Warna Aksen dan Tombol */
-  --color-button-primary: #1a1a1a;         /* tombol utama (hitam pekat) */
-  --color-button-hover: #333333;           /* hover tombol */
-  --color-button-disabled: #cccccc;        /* tombol nonaktif */
-  
+  --color-button-primary: #1a1a1a;
+  /* tombol utama (hitam pekat) */
+  --color-button-hover: #333333;
+  /* hover tombol */
+  --color-button-disabled: #cccccc;
+  /* tombol nonaktif */
+
   /* 💰 Warna Harga dan Total */
-  --color-price: #1a1a1a;                  /* teks harga */
-  --color-total: #000000;                  /* total akhir */
-  --color-tax: #666666;                    /* teks pajak */
+  --color-price: #1a1a1a;
+  /* teks harga */
+  --color-total: #000000;
+  /* total akhir */
+  --color-tax: #666666;
+  /* teks pajak */
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: .9rem;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background-main);
 }
+
 .container {
   min-height: 100vh;
-  background-color: var(--color-background-main);
   background-image: url(../resources/background-image.png);
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 1.5rem;
 }
+
 header {
   color: var(--color-text-inverse);
   display: flex;
@@ -50,6 +70,7 @@ header {
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
+
 header p {
   font-size: .8rem;
   background-color: var(--color-button-primary);
@@ -57,25 +78,31 @@ header p {
   border-radius: 20px;
   text-transform: uppercase;
 }
+
 main {
   width: 95%;
   margin: auto;
+  margin-bottom: 2rem;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
 aside {
   background-color: var(--color-background-sidebar);
   border-radius: 10px 0 0 10px;
 }
+
 .card {
   display: grid;
-  grid-template-columns: 1fr 1rem 1fr auto 1fr;
-  margin: .8rem 1.5rem;
+  grid-template-columns: auto 1rem 1fr auto 1fr;
+  margin: 1rem 1.5rem;
 }
+
 aside .card:first-child {
   margin-top: 1.5rem;
 }
+
 .image {
   grid-column: 1/2;
   grid-row: 1/4;
@@ -88,24 +115,29 @@ aside .card:first-child {
   border-radius: 8px;
   border: 1px solid var(--color-border);
 }
+
 .image img {
   width: auto;
   height: auto;
 }
+
 .tag {
   grid-column: 3/4;
   grid-row: 1/2;
 }
+
 .total {
   grid-column: 3/4;
   grid-row: 3/4;
   align-self: end;
 }
+
 .price {
   grid-column: 5/6;
   grid-row: 1/2;
   justify-self: end;
 }
+
 .delete {
   grid-column: 5/6;
   grid-row: 3/4;
@@ -121,12 +153,14 @@ aside .card:first-child {
   border-top: 1px solid var(--color-border);
   padding-top: 1rem;
 }
+
 .coupon input {
   padding: 10px;
   padding-left: 15px;
   border-radius: 8px;
   border: 1px solid var(--color-border);
 }
+
 .coupon button {
   background-color: var(--color-button-primary);
   border-radius: 8px;
@@ -136,6 +170,16 @@ aside .card:first-child {
   color: var(--color-text-inverse);
 }
 
+.total-buttom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin: 1.5rem;
+}
+
+.total-buttom .angka {
+  justify-self: end;
+}
 
 
 
@@ -144,4 +188,5 @@ aside .card:first-child {
 .card-form {
   background-color: var(--color-background-card);
   border-radius: 0 10px 10px 0;
+  padding: 1.5rem;
 }
