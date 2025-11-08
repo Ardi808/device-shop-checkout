@@ -352,15 +352,22 @@ input[type="number"] {
   * {
     font-size: 95%;
   }
+
   main {
-  width: 98%;
-  grid-template-columns: repeat(1, 1fr);
+    width: 98%;
+    grid-template-columns: repeat(1, 1fr);
   }
+
   .card-form {
     border-radius: 0 0 10px 10px;
   }
+
   aside {
-  background-color: var(--color-background-sidebar);
-  border-radius: 10px 10px 0 0;
-}
+    background-color: var(--color-background-sidebar);
+    border-radius: 10px 10px 0 0;
+  }
+
+  .author-info {
+    width: 90%;
+  }
 }
